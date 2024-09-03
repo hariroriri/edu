@@ -6715,6 +6715,16 @@ blockquote.vs-quote cite {
   font-size: 20px;
   color: var(--white-color);
 }
+
+.testi-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Adjust the number of lines to your preference */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; /* Ensures the text wraps */
+}
+
 .testi-style1 .testi-client {
   background-color: var(--white-color);
   border-radius: 20px;
@@ -9294,7 +9304,12 @@ blockquote.vs-quote cite {
 .space,
 .space-top {
   padding-top: var(--section-space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
 .space,
 .space-bottom {
   padding-bottom: var(--section-space);
@@ -9311,6 +9326,8 @@ blockquote.vs-quote cite {
   .space,
   .space-top {
     padding-top: var(--section-space-mobile);
+    justify-content: center;
+    align-items: flex-start; /* Adjust if needed */
   }
   .space,
   .space-bottom {
@@ -9326,5 +9343,49 @@ blockquote.vs-quote cite {
   }
   .space-top-md-none {
     padding-top: 0;
+  }
+}
+
+/* Center content for large screens and laptops */
+.centered-content {
+  display: flex;
+  justify-content: center; 
+}
+
+.centered-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.centered-content .col-md-6 {
+  display: flex;
+  justify-content: center; 
+}
+
+.media-style4 {
+  text-align: center; 
+}
+
+.media-icon {
+  margin: 0 auto; 
+}
+
+.media-title {
+  margin-top: 1rem; 
+}
+
+.media-text {
+  margin-top: 0.5rem; 
+}
+
+/* Align headings to the left side of the screen */
+.title-area {
+  text-align: left; 
+}
+
+@media (max-width: 991px) {
+  .centered-content {
+    flex-direction: column; 
   }
 }
