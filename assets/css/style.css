@@ -9466,3 +9466,76 @@ blockquote.vs-quote cite {
 .modal-content .close-modal:hover {
   background-color: #3747ff; 
 }
+
+/* Image card */
+
+.image-card {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px; /* Adds padding around the card */
+  border-radius: 15px; /* Rounds the card corners */
+  background-color: #f8f9fa; /* Light background for card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  overflow: hidden; /* Ensures no overflow from image */
+}
+
+.image-card .card-img {
+  width: 100%; /* Makes the image responsive */
+  height: 350px; /* Sets a fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px; /* Rounds the image corners */
+  margin: 0 auto; /* Centers the image horizontally */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.image-card .card-img:hover {
+  transform: scale(1.05); /* Zoom in effect */
+}
+
+.image-card .card-content {
+  padding: 15px; /* Adds padding around the content inside the card */
+  text-align: center;
+}
+
+
+.custom-space-top {
+  padding-top: 125px; /* Add decent space to the top */
+}
+
+.custom-space-bottom {
+  padding-bottom: 125px; /* Add decent space to the bottom */
+}
+
+.custom-carousel {
+  margin: 0 auto; /* Center the carousel if needed */
+}
+
+.custom-media-style {
+  padding: 20px; /* Adjust padding within media-style for better spacing */
+  background-color: #f8f9fa; /* Light background color for better presentation */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center-align content */
+}
+
+.custom-media-icon {
+  margin-bottom: 15px; /* Space between icon and title */
+}
+
+.custom-media-icon img {
+  max-width: 100%; /* Ensure images fit within their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.custom-media-title {
+  font-size: 1.25rem; /* Increase font size for title */
+  margin-bottom: 10px; /* Space between title and text */
+}
+
+.custom-media-text {
+  font-size: 1rem; /* Font size for text */
+  color: #6c757d; /* Subtle color for the text */
+}
+
