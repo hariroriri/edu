@@ -9518,6 +9518,7 @@ blockquote.vs-quote cite {
   border-radius: 10px; /* Rounded corners for the card */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   text-align: center; /* Center-align content */
+  margin-bottom: 20px; /* Default space between cards for larger screens */
 }
 
 .custom-media-icon {
@@ -9539,3 +9540,15 @@ blockquote.vs-quote cite {
   color: #6c757d; /* Subtle color for the text */
 }
 
+/* Add spacing between cards for tablet and mobile views */
+@media (max-width: 992px) { /* For tablets (below 992px width) */
+  .custom-media-style {
+    margin-bottom: 20px; /* Increase space between cards */
+  }
+}
+
+@media (max-width: 768px) { /* For mobile devices (below 768px width) */
+  .custom-media-style {
+    margin-bottom: 15px; /* Adjust space for smaller screens */
+  }
+}
